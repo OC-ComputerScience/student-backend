@@ -44,14 +44,16 @@ function validate(student) {
 
 /* GET student listing. */
 router.get('/', function(req, res, next) {
+    var offset;
+    var limit;
     if(req.query.page == null)
-        var offset = 0;
+        offset = 0;
     else
-        var offset = parseInt(req.query.page);
+        offset = parseInt(req.query.page);
     if(req.query.per_page == null)
-        var limit = 20;
+        limit = 20;
     else
-        var limit = parseInt(req.query.per_page);
+        limit = parseInt(req.query.per_page);
     res.locals.connection.query('SELECT * FROM student LIMIT ? OFFSET ?', [limit, offset], function(error, results, fields) {
         if(error) {
             res.status(500);
