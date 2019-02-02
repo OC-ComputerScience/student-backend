@@ -3,38 +3,38 @@ var router = express.Router();
 
 function validate(student) {
     var errorMessage = '[';
-    if(student.idNumber.length == 0) {
+    if(student.idNumber.length === 0) {
         errorMessage += '{"attributeName":"idNumber" , "message":"Must have idNumber"}';
     }
-    if(student.firstName.length == 0) {
+    if(student.firstName.length === 0) {
         if(errorMessage.length > 1) errorMessage += ',';
         errorMessage += '{"attributeName":"firstName", "message":"Must have first name"}';
     }
-    if(student.lastName.length == 0) {
+    if(student.lastName.length === 0) {
         if(errorMessage.length > 1) errorMessage += ',';
         errorMessage += '{"attributeName":"lastName" , "message":"Must have last name"}';
     }
-    if(student.zip.length == 0) {
+    if(student.zip.length === 0) {
         if(errorMessage.length > 1) errorMessage += ',';
         errorMessage += '{"attributeName":"zip" , "message":"Must have zip code"}';
     }
-    if(student.city.length == 0) {
+    if(student.city.length === 0) {
         if(errorMessage.length > 1) errorMessage += ',';
         errorMessage += '{"attributeName":"city" , "message":"Must have city"}';
     }
-    if(student.state.length == 0) {
+    if(student.state.length === 0) {
         if(errorMessage.length > 1) errorMessage += ',';
         errorMessage += '{"attributeName":"state" , "message":"Must have state"}';
     }
-    if(student.email.length == 0) {
+    if(student.email.length === 0) {
         if(errorMessage.length > 1) errorMessage += ',';
         errorMessage += '{"attributeName":"email" , "message":"Must have email"}';
     }
-    if(student.classification.length == 0) {
+    if(student.classification.length === 0) {
         if(errorMessage.length > 1) errorMessage += ',';
         errorMessage += '{"attributeName":"classification" , "message":"Must have classification"}';
     }
-    if(student.gender.length == 0) {
+    if(student.gender.length === 0) {
         if(errorMessage.length > 1) errorMessage += ',';
         errorMessage += '{"attributeName":"gender" , "message":"Must have gender"}';
     }
