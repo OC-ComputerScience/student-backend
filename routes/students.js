@@ -104,7 +104,6 @@ router.put('/:id', function(req, res, next) {
     }
 });
 router.post('/', function(req, res, next) {
-    var id = req.params.id;
     console.log(req.body);
 
     var student = req.body;
