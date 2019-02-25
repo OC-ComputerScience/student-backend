@@ -68,6 +68,7 @@ router.get("/", function(req, res, next) {
         res.send(JSON.stringify(results));
         //If there is no error, all is good and response is 200OK.
       }
+      res.locals.connection.end();
     }
   );
 });
@@ -87,6 +88,7 @@ router.get("/:id", function(req, res, next) {
       res.send(JSON.stringify(results));
       //If there is no error, all is good and response is 200OK.
     }
+    res.locals.connection.end();
   });
 });
 router.put("/:id", function(req, res, next) {
@@ -116,6 +118,7 @@ router.put("/:id", function(req, res, next) {
           );
           //If there is no error, all is good and response is 200OK.
         }
+        res.locals.connection.end();
       }
     );
   }
@@ -146,6 +149,7 @@ router.post("/", function(req, res, next) {
           );
           //If there is no error, all is good and response is 200OK.
         }
+        res.locals.connection.end();
       }
     );
   }
@@ -166,6 +170,7 @@ router.delete("/:id", function(req, res, next) {
       res.send(JSON.stringify({ status: 200, error: null, response: results }));
       //If there is no error, all is good and response is 200OK.
     }
+    res.locals.connection.end();
   });
 });
 module.exports = router;
