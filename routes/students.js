@@ -93,8 +93,6 @@ router.get("/:id", function(req, res, next) {
 });
 router.put("/:id", function(req, res, next) {
   var id = req.params.id;
-  console.log(req.body);
-
   var student = req.body;
   let errorMessage = validate(student);
   if (errorMessage.length > 2) {
@@ -124,8 +122,6 @@ router.put("/:id", function(req, res, next) {
   }
 });
 router.post("/", function(req, res, next) {
-  console.log(req.body);
-
   var student = req.body;
   let errorMessage = validate(student);
   if (errorMessage.length > 2) {
