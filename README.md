@@ -1,2 +1,2 @@
-# IA-Student-BackEnd
+# student-backend
 Student list application backend.
