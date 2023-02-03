@@ -2,6 +2,8 @@
 
 This application allows users to create and maintain a list of students. Please visit https://github.com/OC-ComputerScience/student-frontend-vue2 for the Vue 2 frontend repository or https://github.com/OC-ComputerScience/student-frontend-vue3 for the Vue 3 frontend repository.
 
+[Project Setup for your Local Machine](project-setup-for-your-local-machine)
+
 #### Please note:
 - You will need to create a database and be able to run it locally.
 
