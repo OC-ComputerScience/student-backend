@@ -8,8 +8,7 @@ This application allows users to create and maintain a list of students. Please 
 
 ## Project Setup for your Local Machine
 
-#### Please note:
-- You will need to create a database and be able to run it locally.
+#### Please note that you will need to create a database and be able to run it locally.
 
 1. Clone the project into your **XAMPP/xamppfiles/htdocs/studentapp** directory.
 ```
