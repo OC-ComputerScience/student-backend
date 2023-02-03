@@ -3,8 +3,8 @@
 This application allows users to create and maintain a list of students. Please visit https://github.com/OC-ComputerScience/student-frontend-vue2 for the Vue 2 frontend repository or https://github.com/OC-ComputerScience/student-frontend-vue3 for the Vue 3 frontend repository.
 
 #### Table of Contents
-- [Project Setup for your Local Machine](#project-setup-for-your-local-machine)
-- [Project Setup for your AWS Instance](#project-setup-for-your-aws-instance)
+[Project Setup for your Local Machine](#project-setup-for-your-local-machine)</br>
+[Project Setup for your AWS Instance](#project-setup-for-your-aws-instance)
 
 ## Project Setup for your Local Machine
 
