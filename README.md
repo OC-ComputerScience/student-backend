@@ -2,7 +2,7 @@
 
 This application allows users to create and maintain a list of students. Please visit https://github.com/OC-ComputerScience/student-frontend-vue2 for the Vue 2 frontend repository or https://github.com/OC-ComputerScience/student-frontend-vue3 for the Vue 3 frontend repository.
 
-#### Table of Contents
+### Table of Contents
 [Project Setup for your Local Machine](#project-setup-for-your-local-machine)</br>
 [Project Setup for your AWS Instance](#project-setup-for-your-aws-instance)
 
@@ -59,7 +59,7 @@ npm install
 5. Make a local **student** database.
     - Go to http://localhost/phpmyadmin.
     - Create a database named **student**.
-    - Import the **student.sql** file from this repo into the database.
+    - Import the **student.sql** file from this repository into the database.
 
 6. Compile and run the application locally.
 ```
@@ -161,7 +161,7 @@ sudo a2enmod proxy_http
     sudo /etc/init.d/apache2 restart
     ```
 
-4. Update the **PHP config** to allow loading of big files. 
+7. Update the **PHP config** to allow loading of big files. 
     - Open your **php.ini** file with the following two commands.
 
     ```
@@ -172,29 +172,25 @@ sudo a2enmod proxy_http
     sudo nano php.ini
     ```
 
-    - For Windows:
-         - In XAMPP, find the **Edit/Configure** button for **Apache**.
-         - Edit the **php** file, labeled **php.ini**. 
-         - Use **Control** and **F** to find **upload_max_filesize**.
-         - Make sure it is at least **6M**.
-    - For Mac:
-         - Use a Text Editor to edit **XAMPP/xamppfiles/etc/php.ini**.
-         - Use **Command** and **F** to find **upload_max_filesize**.
-         - Make sure it is at least **6M**.
+    - Press **Command** and **W** on your keyboard to find the line quicker.
+    - Type in **upload_max**.
+    - Change the line to make the max **6M**.
      ```
      upload_max_filesize=6M
      ```
-     - **Save** the file.
-     - **Restart Apache** and exit XAMPP.
+     
+    - Press **Control** and **X** on your keyboard.
+    - Press **Y**.
+    - Press **Enter**.
+    - Restart Apache with the following command.
 
-5. Make a local **student** database.
-    - Go to http://localhost/phpmyadmin.
+    ```
+    sudo /etc/init.d/apache2 restart
+    ```
+
+8. Make a **student** database on your **AWS instance**.
+    - Go to http://**your instance**/phpmyadmin.
     - Create a database named **student**.
-    - Import the **student.sql** file from this repo into the database.
+    - Import the **student.sql** file from this repository into the database.
 
-6. Compile and run the application locally.
-```
-npm run start
-```
-
-7. Check the corresponding **frontend repositories** for the correct URL to use to test your application.
+9. Check the corresponding **frontend repositories** for the correct URL to use to test your application.
