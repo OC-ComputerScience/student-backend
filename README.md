@@ -4,7 +4,6 @@ This application allows users to create and maintain a list of students. Please 
 
 ##### Table of Contents
 [Project Setup for your Local Machine](#project-setup-for-your-local-machine)
-
 [Project Setup for your AWS Instance](#project-setup-for-your-aws-instance)
 
 #### Please note:
