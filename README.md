@@ -1,6 +1,8 @@
 # Student List Backend with Node
 
-This application allows users to create and maintain a list of students. Please visit https://github.com/OC-ComputerScience/student-frontend-vue2 for the Vue 2 frontend repository or https://github.com/OC-ComputerScience/student-frontend-vue3 for the Vue 3 frontend repository.
+This application allows users to create and maintain a list of students. Please visit
+https://github.com/OC-ComputerScience/student-frontend-JS for the JavaScript frontend repository,
+https://github.com/OC-ComputerScience/student-frontend-vue2 for the Vue 2 frontend repository, or https://github.com/OC-ComputerScience/student-frontend-vue3 for the Vue 3 frontend repository.
 
 ### Table of Contents
 [Project Setup for your Local Machine](#project-setup-for-your-local-machine)</br>
