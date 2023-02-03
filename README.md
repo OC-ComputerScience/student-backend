@@ -1,6 +1,6 @@
 # Student List Backend with Node
 
-This application allows users to create and maintain a list of students. Please visit
+This project allows users to create and maintain a list of students. Please visit
 https://github.com/OC-ComputerScience/student-frontend-JS for the JavaScript frontend repository,
 https://github.com/OC-ComputerScience/student-frontend-vue2 for the Vue 2 frontend repository, or https://github.com/OC-ComputerScience/student-frontend-vue3 for the Vue 3 frontend repository.
 
@@ -61,12 +61,12 @@ npm install
     - Create a database named **student**.
     - Import the **student.sql** file from this repository into the database.
 
-6. Compile and run the application locally.
+6. Compile and run the project locally.
 ```
 npm run start
 ```
 
-7. Check the corresponding **frontend repositories** for the correct URL to use to test your application.
+7. Check the corresponding **frontend repositories** for the correct URL to use to test your project.
 
 ## Project Setup for your AWS Instance
 1. Make a **nodeapps** directory in your home directory on your AWS instance with the following three commands.
@@ -193,4 +193,4 @@ sudo a2enmod proxy_http
     - Create a database named **student**.
     - Import the **student.sql** file from this repository into the database.
 
-9. Check the corresponding **frontend repositories** for the correct URL to use to test your application.
+9. Check the corresponding **frontend repositories** for the correct URL to use to test your project.
