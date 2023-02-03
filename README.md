@@ -19,7 +19,6 @@ git clone https://github.com/OC-ComputerScience/student-backend.git
 ```
 npm install
 ```
-
 3. Configure **Apache** to point to **Node** for API requests.
     - We recommend using XAMPP to serve this project.
     - In XAMPP, find the **Edit/Configure** button for **Apache**.
