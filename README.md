@@ -100,7 +100,7 @@ cd nodeapps
 git clone https://github.com/OC-ComputerScience/student-backend.git
 ```
 
-3. Update your **MySQL password** in the **app.js** file.
+3. Update your **MySQL password** in the **server.js** file.
 
    - Open your **app.js** file with the following two commands.
 
@@ -109,7 +109,7 @@ git clone https://github.com/OC-ComputerScience/student-backend.git
    ```
 
    ```
-   nano app.js
+   nano server.js
    ```
 
    - Using your **arrow keys**, find the **MySQL connection**.
@@ -127,17 +127,19 @@ git clone https://github.com/OC-ComputerScience/student-backend.git
    - Press **Y**.
    - Press **Enter**.
 
-4. Install the project and start Node with the following two commands.
+4. Run the following command to install the app.
 
 ```
 npm install
 ```
 
+5.	Run the following command to make the backend Node app run as a service.
+
 ```
-nohup npm run start &
+sudo systemctl start student-backend
 ```
 
-5. Enable required **Apache modules** with the following two commands.
+6. Enable required **Apache modules** with the following two commands.
 
 ```
 sudo a2enmod proxy
@@ -147,7 +149,7 @@ sudo a2enmod proxy
 sudo a2enmod proxy_http
 ```
 
-6. Configure **Apache** to point to **Node** for API requests.
+7. Configure **Apache** to point to **Node** for API requests.
 
    - Open the configuration file with the following command.
 
@@ -177,14 +179,29 @@ sudo a2enmod proxy_http
    sudo /etc/init.d/apache2 restart
    ```
 
-7. Update the **PHP config** to allow loading of big files.
+8. Update the **PHP config** to allow loading of big files.
 
-   - Open your **php.ini** file with the following two commands.
+   - Run the following command to get to the **php.ini** file.
 
    ```
-   cd /etc/php/7.2/apache2/
+   cd /etc/php/8.1/apache2/
    ```
 
+   - **Note:** the above command may give an error that says **directory not found**.
+   - If that happens, run these two commands:
+
+   ```
+   cd /etc/php
+   ```
+   ```   
+   ls
+   ```
+   
+   - It should display the name (number) of the **current php version directory**, so you should replace the **8.1** with that number.
+
+   ```
+   cd ?.?/apache2/
+   ```
    ```
    sudo nano php.ini
    ```
