@@ -29,6 +29,7 @@ app.use(function (req, res, next) {
   res.locals.connection.connect();
   next();
 });
+
 app.use("/api/", indexRouter);
 app.use("/api/students", studentsRouter);
 app.use("/api/zip", zipRouter);
