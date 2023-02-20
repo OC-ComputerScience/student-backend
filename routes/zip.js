@@ -3,12 +3,12 @@ var router = express.Router();
 
 /* GET zip city and state */
 
-router.get("/:zip", function (req, res, next) {
+router.get("/:zip", function(req, res, next) {
   var zip = req.params.zip;
   res.locals.connection.query(
     "SELECT city,state_code FROM location WHERE postal_code=?",
     zip,
-    function (error, results, fields) {
+    function(error, results, fields) {
       if (error) {
         res.send(JSON.stringify({ status: 500, error: error, response: null }));
         //If there is error, we send the error in the error section with 500 status
