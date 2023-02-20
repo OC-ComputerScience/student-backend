@@ -102,7 +102,7 @@ git clone https://github.com/OC-ComputerScience/student-backend.git
 
 3. Update your **MySQL password** in the **server.js** file.
 
-   - Open your **app.js** file with the following two commands.
+   - Open your **server.js** file with the following two commands.
 
    ```
    cd student-backend
