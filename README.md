@@ -43,7 +43,7 @@ npm install
    LoadModule proxy_http_module modules/mod_proxy_http.so
    ```
 
-   - Save the file and exit XAMPP.
+   - Save the file, restart Apache, and exit XAMPP.
 
 4. Update the **PHP config** to allow loading of big files.
 
@@ -133,7 +133,7 @@ git clone https://github.com/OC-ComputerScience/student-backend.git
 npm install
 ```
 
-5.	Run the following command to make the backend Node app run as a service.
+5. Run the following command to make the backend Node app run as a service.
 
 ```
 sudo systemctl start student-backend
@@ -193,15 +193,17 @@ sudo a2enmod proxy_http
    ```
    cd /etc/php
    ```
-   ```   
+
+   ```
    ls
    ```
-   
+
    - It should display the name (number) of the **current php version directory**, so you should replace the **8.1** with that number.
 
    ```
    cd ?.?/apache2/
    ```
+
    ```
    sudo nano php.ini
    ```
@@ -223,10 +225,10 @@ sudo a2enmod proxy_http
    sudo /etc/init.d/apache2 restart
    ```
 
-8. Make a **student** database on your **AWS instance**.
+9. Make a **student** database on your **AWS instance**.
 
    - Go to http://**your instance**/phpmyadmin.
    - Create a database named **student**.
    - Import the **student.sql** file from this repository into the database.
 
-9. Check the corresponding **frontend repositories** for the correct URL to use to test your project.
+10. Check the corresponding **frontend repositories** for the correct URL to use to test your project.
